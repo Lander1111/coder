@@ -1,0 +1,52 @@
+body {
+    background-color: #4B0082; /* Purple background */
+    color: #FFD700; /* Gold text */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+#login-section, #app-section {
+    text-align: center;
+    border: 2px solid #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #FFD700;
+}
+
+input[type="password"], textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    background-color: #4B0082;
+    color: #FFD700;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFD700;
+    color: #4B0082;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #DAA520;
+}
+
+pre {
+    text-align: left;
+    background-color: #333;
+    color: #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+}

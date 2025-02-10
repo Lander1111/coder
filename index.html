@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppCoder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="login-section">
+        <h1>AppCoder</h1>
+        <p>Enter Password to Access:</p>
+        <input type="password" id="password-input" placeholder="Password">
+        <button onclick="checkPassword()">Enter</button>
+        <p id="error-message" style="display:none; color: red;">Incorrect Password!</p>
+    </div>
+
+    <div id="app-section" style="display:none;">
+        <h1>AppCoder</h1>
+        <textarea id="user-prompt" rows="4" cols="50" placeholder="Enter your prompt here..." oninput="updatePreview()"></textarea>
+        <button onclick="generateCode()">Generate Code</button>
+        <h2>Code Preview:</h2>
+        <pre id="code-preview"></pre>
+        <h2>Generated Code:</h2>
+        <pre id="code-output"></pre>
+    </div>
+</body>
+</html>
